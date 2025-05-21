@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="lib/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Serenity</title>
+</head>
+
+<body style="background-color: #fbfefb">
+  <!-- NavBar -->
+  <nav id="navmenu" class="navbar navbar-expand-lg sticky-top">
+    <a class="navbar-brand" href="#home">
+      <img src="Images/logo/Green2.png" width="50" height="50" class="d-inline-block align-top" loading="lazy">
+      <span>AgriSense360</span></br>
+    </a>
+    <button id="nav-toggle" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span id="nav-toggle-icon" class="fas fa-ellipsis-v"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="navmenu-links" class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Project Scope
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#project-scope">Introduction</a>
+            <a class="dropdown-item" href="#project-scope">Background & Literature Survey</a>
+            <a class="dropdown-item" href="#research_gap">Research Gap</a>
+            <a class="dropdown-item" href="#research_problem">Research Problem & Solution</a>
+            <a class="dropdown-item" href="#research_objectives">Research Objectives</a>
+            <a class="dropdown-item" href="#methodology">Methodology</a>
+            <a class="dropdown-item" href="#tech_used">Technologies</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#milestones">Milestones</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Downloads
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#downloads">Documents</a>
+            <a class="dropdown-item" href="#presentations">Presentations</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Home -->
+  <section id="home">
+  <div class="container">
+    <div class="hero-cta">
+      <h1>Predictive Analytics for Yield Optimization:To Predict Crop Yields, Optimize Planting Schedules and Enhance Productivity.</h1>
+      <a class="btn btn-outline-light" href="#project-scope">
+        <span class="btn-text">Learn More</span>
+        <span class="fas fa-chevron-right btn-icon"></span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-cover">
+    <img class="hero-image" src="Images/other/tomato2.jpg" alt="Tomato crop background" />
+  </div>
+</section>
+
+  <!-- project-scope -->
+  <section id="project-scope" class="main-sections" style="background-color:#fafffb">
+    <div class="container">
+      <h5 class="section-headings">Project Scope</h5>
+
+     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriSense360 Introduction</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="intro-container">
+    <!-- Introduction Section -->
+    <div class="intro-text animate-on-scroll">
+      <h2 class="intro-heading">Introduction</h2>
+      <p>
+        AgriSense360 is an innovative precision agriculture system designed to support Sri Lankan farmers by combining traditional farming with advanced technology. It uses a distributed network of IoT sensors connected via LoRaWAN to monitor soil conditions (moisture, pH, nutrients), weather, and crop health in real time. Infrared imaging is integrated to detect early signs of crop stress and diseases without harming plants.
+        
+        The collected data is analyzed using machine learning models—linear regression, deep neural networks, and SVM for accurate crop yield prediction (78.34% accuracy) and disease detection in tomatoes (85% accuracy with CNN models). The system is cost-effective and flexible, making it accessible to smallholders and large agribusinesses alike.
+       
+        A mobile application dashboard delivers actionable insights such as soil health indices, crop water stress levels, and bacteria risk to farmers, enabling timely, data-driven decisions. AgriSense360 aims to enhance productivity, manage risks, and promote sustainable farming practices amid climate challenges and increasing food demand in Sri Lanka.
+      </p>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="intro-images">
+      <img src="Images/intro/1.JPG" alt="Image 1" class="intro-img">
+      <img src="Images/intro/2.JPG" alt="Image 2" class="intro-img">
+      <img src="Images/intro/3.JPG" alt="Image 3" class="intro-img">
+      <img src="Images/intro/4.JPG" alt="Image 4" class="intro-img">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="image-modal" id="imageModal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+    <img id="popupImage" alt="Popup Image" />
+    <button class="nav-btn next" id="nextBtn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+      
+      <!-- Literature Survey -->
+      <div id="literature" class="sub-section">
+        <h2>Background & Literature Survey</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div class="section-info-div">
+                <div class="row">
+                  <div class="col-sm-5"><img src="Images/lit/5.JPG" width="100%" /></div>
+                  <div class="col-sm-7 text-col">Tomato cultivation in Sri Lanka faces yield variability due to climate stress and diseases. Predictive analytics can improve yield and farmer income by optimizing planting times and resource usage <span style="color: grey; font-size: 12px;">[1]</span
+                      style="color: grey; font-size: 100px;"></div>
+                </div>
+              </div>
+              <div class="section-figure ">
+                <img style="align-items:center" src="Images/lit/6.JPG" width="100%" />
+                <p class="Fig01">Figure 1. Tomato production growth in Sri Lanka within past years</p>
+              </div>
+              <div class="section-figure ">
+                <img style="align-items:center" src="Images/lit/7.JPG" width="100%" />
+                <p class="Fig01">Figure 2. Global Tomato Market Size</p>
+              </div>
+            </div>
+          </div>
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+            <p>The field of mental health and AI research is active, with a focus on predicting stress levels [3].
+              Studies have explored the relationship between stress and physiological factors, such as heart rate
+              variability, cortisol levels, and skin conductance. Wearable devices like smartwatches provide real-time
+              physiological data for stress prediction. Various research papers have developed stress management
+              questionnaires, including the DASS42 scale [3] for identifying depression, anxiety, and stress. Machine
+              learning algorithms, specifically Support Vector Machine and Logistic Regression, achieved high accuracy
+              in predicting these conditions, around 97% and 98%, respectively. Deep learning techniques have been
+              explored for detecting users' mental states [4].</p>
+            <p>Self-reflection and journaling practices are recognized for enhancing self-awareness and emotional
+              regulation. A study by Smith et al. [5] in 2019 highlighted the benefits of regular journaling in
+              fostering personal growth, with effective features including free writing, guided prompts, and structured
+              exercises. Natural language processing (NLP) systems like BioBERT and ClinicalBERT play a crucial role in
+              understanding journal content and classifying entries by emotional tone. Johnson et al.'s research [6] in
+              2017 introduced a sentiment analysis system for tracking emotional changes through journal entry analysis,
+              aiding individuals in monitoring their mental well-being and personal growth over time.</p>
+            <p>Positive thinking, emotions, and feelings play a vital role in improving mental health. DeMuse, a
+              mood-based music app, stems from research exploring music's stress-reduction impact [7]. Nature sounds
+              have proven effective for physiological recovery after stress. The Stress Reduction Theory and the
+              Attention Restoration Theory underline nature's positive influence on emotions and focus [8]. This
+              connection leads to therapies like guided imagery, mindfulness, and eco-therapy for mental well-being.
+              Facial Emotion Recognition (FER) is explored in therapy, with a CNN-based approach achieving 80% accuracy
+              [9]. Online therapy has been in practice since before 2016 [8]. </p>
+            <p>In the field of text-based image generation, notable systems have emerged, each with distinctive
+              features. DALL·E [10], developed by OpenAI, is a pioneering model that seamlessly blends GAN architecture
+              with Transformer models to create images based on textual descriptions. For example, it can transform text
+              prompts into vivid images, such as "a Male Lion walking in the jungle." Another remarkable system, AttnGAN
+              [11], excels at generating highly detailed and coherent images from text descriptions. AttnGAN uses global
+              and local attention mechanisms to refine the generated images, making it well-suited for creative
+              applications, especially in art generation.</p>
+            <div class="references">
+              <p class="pt-sm-1"><strong>References</strong></p>
+              <ol>
+                <li>Kessler, R.C., Haro, J.M., Heeringa, S.G., Pennell, B.E. and
+                  Üstün, T.B., 2006. The World Health Organization world mental health
+                  survey initiative. Epidemiology and Psychiatric Sciences, 15(3), pp.161-166.</li>
+                <li>
+                  Richter, F. (2022) Infographic: Pandemic causes spike in anxiety &amp; depression, Statista Daily
+                  Data. Available at:
+                  https://www.statista.com/chart/21878/impact-of-coronavirus-pandemic-on-mental-health/ (Accessed: 03
+                  November 2023).
+                </li>
+                <li>S. Sladojevic, M. Arsenovic, A. Anderla, D. Culibrk, and D. Stefanovic, “Deep Neural Networks based
+                  recognition of plant diseases by Leaf Image Classification,” Computational Intelligence and
+                  Neuroscience, vol. 2016, pp. 1–11, 2016.</li>
+                <li>
+                  U. S. Reddy, A. V. Thota and A. Dharun, "Machine Learning
+                  Techniques for Stress Prediction in Working Employees," 2018 IEEE
+                  International Conference on Computational Intelligence and Computing
+                  Research (I.C.C.I.C.), Madurai, India, 2018, pp. 1-4, doi:
+                  10.1109/ICCIC.2018.8782395
+                </li>
+                <li>
+                  P. S. Pandey, "Machine Learning and IoT for prediction and
+                  detection of stress," 2017 17th International Conference on Computational
+                  Science and Its Applications (I.C.C.S.A.), Trieste, Italy, 2017, pp. 1-5, doi:
+                  10.1109/ICCSA.2017.8000018
+                </li>
+                <li>
+                  Smith, A., Johnson, B., & Williams, C. (2019). Exploring the
+                  Benefits of Self-Reflection and Journaling in Mental Health Tracking.
+                  Journal of Psychology and Well-being, 25(2), 78-92
+                </li>
+                <li>
+                  A. Baharum, T. W. Seong, N. H. M. Zain, N. M. M. Yusop, M.
+                  Omar and N. M. Rusli, "Releasing stress using music mood application:
+                  DeMuse," 2017 International Conference on Information and
+                  Communication Technology Convergence (I.C.T.C.), Jeju, Korea (South),
+                  2017, pp. 351-355, doi: 10.1109/ICTC.2017.8191001
+                </li>
+                <li>
+                  Ohly, H., White, M.P., Wheeler, B.W., Bethel, A., Ukoumunne,
+                  O.C., Nikolaou, V. and Garside, R., 2016. Attention Restoration Theory: A
+                  systematic review of the attention restoration potential of exposure to natural
+                  environments. Journal of Toxicology and Environmental Health, Part B,
+                  19(7), pp.305-343.
+                </li>
+                <li>
+                  Hussain, S.A. and Al Balushi, A.S.A., 2020. A real time face
+                  emotion classification and recognition using deep learning model. In Journal
+                  of physics: Conference series (Vol. 1432, No. 1, p. 012087). I.O.P.
+                  Publishing
+                </li>
+                <li>
+                  M. Cahyadi, M. Rafi, W. Shan, H. Lucky and J. V. Moniaga,
+                  "Accuracy and Fidelity Comparison of Luna and DALL-E 2 DiffusionBased Image Generation Systems," 2023
+                  IEEE International Conference on
+                  Industry 4.0, Artificial Intelligence, and Communications Technology
+                  (IAICT), BALI, Indonesia, 2023, pp. 108-112, doi:
+                  10.1109/IAICT59002.2023.10205695.
+                </li>
+                <li>
+                  P. Sumi, S. Sindhuja and S. Sureshkumar, "A Comparison between
+                  AttnGAN and DF GAN: Text to Image Synthesis," 2021 3rd International
+                  Conference on Signal Processing and Communication (ICPSC), Coimbatore,
+                  India, 2021, pp. 615-619, doi: 10.1109/ICSPC51351.2021.9451789.
+                </li>
+                <li>
+                  Graham Meadows&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Professor of Adult
+                  Psychiatry, Joanne Enticott&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  Senior Research Fellow and Sebastian Rosenberg&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; Fellow (2023) Three charts on: Why rates of mental illness aren’t going down despite
+                  higher spending, The Conversation. Available at:
+                  https://theconversation.com/three-charts-on-why-rates-of-mental-illness-arent-going-down-despite-higher-spending-97534
+                  (Accessed: 27 December 2023).
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Research Gap -->
+      <div id="research_gap" class="sub-section">
+        <h2>Research Gap</h2>
+        <p>Following areas are the research gaps found in most of the recent researches.</p>
+        <div class="row mt-5 research-gap">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-brain fa-3x " aria-hidden="true" style="color: green; "></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                  <h5>Stress Prediction</h5>
+                </div>
+                <div>
+                  <p style="text-align: justify;">Researchers in the field have primarily focused on machine learning
+                    and IoT-based approaches to predict stress levels. However, a research gap exists regarding the most
+                    relevant predictive factors and their interactions. Many existing studies require costly and complex
+                    hardware, limiting accessibility. Moreover, they often lack comprehensive and multimodal feature
+                    incorporation. The proposed system streamlines data collection with the involvement of mental health
+                    experts and prioritizes user-centered design.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-solid fa-hand-holding-medical fa-3x " aria-hidden="true" style="color: green;"></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                  <h5>Approaches for Stress Reduction</h5>
+                </div>
+                <div>
+                  <p style="text-align: justify;">Research reveals significant gaps in understanding the effectiveness
+                    of complementary health approaches, mindfulness interventions, and yoga in improving mental
+                    well-being, particularly in managing stress. Motivations, outcomes, and the efficacy of these
+                    interventions are inadequately addressed. Additionally, there's a need for meta-analyses in
+                    assessing the effects of Mindfulness-Based Stress Reduction (MBSR) and Mindfulness-Based Cognitive
+                    Therapy (MBCT) on mental health. </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="fa-container text-center">
+                  <i class="fas fa-mobile fa-3x " aria-hidden="true" style="color: green;"></i>
+                </div>
+                <div class="text-center" style="padding-top: 20px;">
+                  <h5>Mindfulness and Mental Health Apps</h5>
+                </div>
+                <div>
+                  <p style="text-align: justify;">
+                    The research identifies a gap in the accurate assessment of a user's mental health condition within
+                    existing mental health apps. To address this gap, it suggests leveraging methods like voice or
+                    emotion recognition, which could provide more precise insights into a user's emotional state.
+                    Additionally, the integration of facial recognition and AI technologies could offer a means to
+                    tailor therapy recommendations more personally, based on the individual's emotional and mental
+                    condition. </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Research Problem -->
+      <div id="research_problem" class="sub-section">
+        <h2>Research Problem & Solution</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+            <h5><strong>Proposed Problem</strong></h5>
+            </br>
+            <h4 class="highlight">How to mitigate challenges in addressing mental health disorders and improve mental
+              well being with the utilization of advanced technologies ?</h4>
+            <p></p>
+            <p style="text-align: justify;">The COVID-19 pandemic has led to a significant increase in mental health
+              issues due to factors like isolation, monotony, heavy workloads, and financial stress. Beyond the
+              pandemic, the competitive and high-pressure modern world poses ongoing challenges to mental well-being.
+              Many people lack access to advanced mental health solutions, and addressing mental health is inherently
+              complex. Efforts to digitize mental health approaches are underway, but ensuring the effectiveness of
+              these technology-driven methods remains a key challenge. This underscores the need for innovative
+              approaches to bridge the gap between traditional and digital mental health solutions in an ever-evolving
+              world.</p>
+            </br>
+          </div>
+
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div>
+                <h5><strong>Proposed Solution</strong></h5>
+                </br>
+                <p style="text-align: justify;">The "Serenity" mobile application incorporates multiple elements to
+                  improve emotional well-being. It assesses stress levels through chat interactions, utilizing Natural
+                  Language Processing (NLP) with a Sequential neural network for sentiment analysis. Stress level
+                  prediction is carried out through a Multi-Layer Perceptron (MLP) classifier. Additionally, the
+                  self-reflection and journaling feature employs NLP to predict emotions from text using Logistic
+                  Regression, subsequently suggesting mood-enhancing activities through content-based filtering. The
+                  application also makes use of Convolutional Neural Networks (CNN) with transfer learning for facial
+                  emotion recognition and provides video recommendations tailored to the user's emotions through
+                  content-based filtering. To add a personal touch, Generative Adversarial Networks (GAN) generate
+                  personalized visual content. Collectively, these diverse features offer users a comprehensive tool for
+                  managing stress and improving emotional well-being.
+
+                </P>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div>
+          <h5><strong>Proposed Solution</strong></h5>
+          </br>
+          <p style="text-align: justify;">The "Serenity" mobile application incorporates multiple elements to improve emotional well-being. It assesses stress levels through chat interactions, utilizing Natural Language Processing (NLP) with a Sequential neural network for sentiment analysis. Stress level prediction is carried out through a Multi-Layer Perceptron (MLP) classifier. Additionally, the self-reflection and journaling feature employs NLP to predict emotions from text using Logistic Regression, subsequently suggesting mood-enhancing activities through content-based filtering. The application also makes use of Convolutional Neural Networks (CNN) with transfer learning for facial emotion recognition and provides video recommendations tailored to the user's emotions through content-based filtering. To add a personal touch, Generative Adversarial Networks (GAN) generate personalized visual content. Collectively, these diverse features offer users a comprehensive tool for managing stress and improving emotional well-being.
+
+          </P>
+        </div> -->
+      </div>
+      <!-- Research Objectives -->
+      <div id="research_objectives" class="sub-section">
+        <div class="container">
+          <h2 class="pb-5 pt-5 text-center mb-5 display-5">Research Objectives</h2>
+          <!-- First Content Section-->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+            <div class="col-6">
+              <h4>Stress Prediction Through Deep Learning</h4>
+              <p style="text-align: justify;">The first objective is to create a deep learning model capable of
+                accurately predicting an individual's stress levels using a range of factors, including environmental,
+                behavioral, and biological variables. This model is intended to aid individuals and healthcare providers
+                in the early identification and management of stress, thus preventing it from progressing into a chronic
+                condition.</p>
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+              <h4>AI based self reflective journaling and activity suggestion</h4>
+              <p style="text-align: justify;">The second objective of this project is to develop an AI-powered
+                self-reflection and journaling system that serves as a valuable tool for users to understand their
+                thoughts and emotions. Furthermore, assists users in identifying and implementing effective strategies
+                to manage their mental health effectively.
+              </p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+          <!-- Third Content Section -->
+          <div class="row align-items-center connecting-lines d-flex">
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+            <div class="col-6">
+              <h4>Facial Emotion Recognition & Video Recommendation</h4>
+              <p style="text-align: justify;">
+                The third objective is to enhance the understanding of users by employing machine learning techniques
+                for emotion recognition. This involves analyzing and identifying the emotional states of users as they
+                interact with the application. Once the user's emotions are successfully recognized, the subsequent step
+                is to provide personalized therapeutic videos that are specifically tailored to match the user's
+                identified emotional state.
+              </p>
+            </div>
+          </div>
+          <!-- Path Line -->
+
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner top-right"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner left-bottom"></div>
+            </div>
+          </div>
+          <!-- Second Content Section-->
+          <div class="row align-items-center justify-content-end connecting-lines d-flex">
+            <div class="col-6 text-right">
+              <h4>Generate custom images from user text input.</h4>
+              <p style="text-align: justify;">The fourth objective is to Offering users the ability to create calming
+                images can be a powerful tool for stress reduction.
+                This feature allows individuals to engage in a therapeutic and creative process, providing a welcome
+                respite from the demands of everyday life.
+                By generating soothing visuals, users can find relaxation and solace in the act of artistic expression.
+                This not only serves as a means of self-care but also fosters
+                a sense of accomplishment and well-being.</p>
+            </div>
+            <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+              <!-- <div class="circle font-weight-bold"><i class="fa fa-star"></i></div> -->
+            </div>
+          </div>
+          <!-- Path Line -->
+          <div class="row timeline_s">
+            <div class="col-2">
+              <div class="corner right-bottom"></div>
+            </div>
+            <div class="col-8">
+              <hr />
+            </div>
+            <div class="col-2">
+              <div class="corner top-left"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Methodology -->
+      <div id="methodology" class="sub-section">
+        <h2>Methodology</h2>
+        <div class="row">
+          <div id="project-scope-left" class="col-md-6 col-sm-12 pt-lg-5">
+            <div class="section-left">
+              <div class="section-figure">
+                <img src="Images/other/system-overview.png" width="100%" height="100%" />
+                <p class="fig2">Figure 3. High Level Architecture of the System.</p>
+              </div>
+            </div>
+          </div>
+          <div id="project-scope-right" class="col-md-6 col-sm-12 pt-lg-5 justify-text">
+            <p>The proposed system consists of 4 main components. They are;</p>
+            <ol>
+              <li><strong>Stress Prediction Through Deep Learning.</strong></li>
+              <li><strong>AI based self reflective journaling and activity suggestion.</strong></li>
+              <li><strong>Facial Emotion Recognition & Video Recommendation.</strong></li>
+              <li><strong>Generate custom images from user text input.</strong></li>
+            </ol>
+            <p> The system diagram in Figure 3 outlines the proposed solution, which aims to provide a smart mobile
+              application for reducing stress and uplifting people's emotions through AI integration. This application
+              can be used by individuals with or without mental health disorders to monitor their emotions, stress
+              levels, and access strategies for stress reduction and emotional well-being. It caters not only to mental
+              health patients and professionals but also to the general public. The application has two key components:
+              user understanding and mental health improvement. For user understanding, it employs stress prediction
+              through chat conversations and emotion prediction using journal entries and facial expressions. To enhance
+              mental health, the app offers mood-based stress reduction activities, therapy video recommendations, and
+              personalized visual content generation based on user input. </p>
+            <p>Authenticated users can access the application's features, including starting a chat to assess their
+              stress levels through NLP sentiment analysis and MLP classification.Users can also maintain journals, with
+              emotions identified using NLP-based text-to-emotion analysis through Logistic Regression. Facial
+              expressions are detected through the mobile selfie camera using CNN-based transfer learning models. Based
+              on identified emotions, the app suggests stress-reducing activities and therapy videos using content-based
+              filtering mechanisms. Users can also request personalized visual content through the chat, with GAN models
+              utilized for visual generation. The machine learning models for sentiment analysis, stress prediction,
+              journal-based emotion prediction, activity suggestions, facial emotion recognition, video recommendations,
+              and visual content generation are deployed within the Flask server. </p>
+          </div>
+        </div>
+      </div>
+      <!-- Technologies -->
+      <div id="tech_used" class="sub-section">
+        <h2>Technologies Used</h2>
+        <div class="row technology mt-5">
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/python.png" alt="Python">
+            </div>
+            <p>Python</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/react.png" alt="React">
+            </div>
+            <p>React</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/tensorflow.png" alt="Python">
+            </div>
+            <p>Tensorflow</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/keras.png" alt="Keras">
+            </div>
+            <p>Keras</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/mongo.jpg" alt="MongoDB">
+            </div>
+            <p>MongoDB</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/firebase.png" alt="Firebase">
+            </div>
+            <p>Firebase</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/googlecloud.png" alt="Google Cloud">
+            </div>
+            <p>Google Cloud</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/android.png" alt="Kafka">
+            </div>
+            <p>Android Studio</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/vscode.png" alt="Doker">
+            </div>
+            <p>VS Code</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/colab.png" alt="Google Colab">
+            </div>
+            <p>Google Colab</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/flask.png" alt="Google map API">
+            </div>
+            <p>Flask API</p>
+          </div>
+          <div class="col-md-2 col-sm-4 col-6 mb-5">
+            <div class="avatar">
+              <img src="Images/tech/jwt.png" alt="Jwt">
+            </div>
+            <p>Jwt</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Milestones -->
+  <section id="milestones" class="main-sections">
+    <div class="container">
+      <h5 class="section-headings">Milestones</h5>
+      <div class="sub-section">
+        <h2>Timeline in Brief</h2>
+        <div class="milestones">
+          <ul class="timeline">
+            <!-- Project Proposal -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">March 2023</p>
+                <h3>Project Proposal</h3>
+                <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your
+                  project approved.</p>
+                <p><strong>Marks Allocated : </strong>6</p>
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="12"
+                    aria-valuemin="0" aria-valuemax="100">6%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Progress Presentation I -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">May 2023</p>
+                <h3>Progress Presentation I</h3>
+                <p>Progress Presentation I reviews the 50% completetion status of the project. This reveals any gaps or
+                  inconsistencies in the design/requirements.</p>
+                <p><strong>Marks Allocated : </strong>6</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 12%" aria-valuenow="13"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 6%" aria-valuenow="15"
+                    aria-valuemin="0" aria-valuemax="100">6%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Research Paper -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">August 2023</p>
+                <h3>Research Paper</h3>
+                <p>Describes what you contribute to existing knowledge, giving due recognition to all work that you
+                  referred in making new knowledge</p>
+                <p><strong>Marks Allocated : </strong>10</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 27%" aria-valuenow="27"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">10%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Progress Presentation II -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">September 2023</p>
+                <h3>Progress Presentation II</h3>
+                <p>Progress Presentation II reviews the 90% completetion status demonstration of the project. Along with
+                  a Poster presesntation which describes the project as a whole.</p>
+                <p><strong>Marks Allocated : </strong>18</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 37%" aria-valuenow="37"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 18%" aria-valuenow="18"
+                    aria-valuemin="0" aria-valuemax="100">18%</div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Logbook -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2023</p>
+                <h3>Logbook</h3>
+                <p>Status of the project is validated through the Logbook. This also includes, Status documents 1 & 2.
+                </p>
+                <p><strong>Marks Allocated : </strong>3</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 57%" aria-valuenow="57"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 3%" aria-valuenow="4"
+                    aria-valuemin="0" aria-valuemax="100">3%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Final Report -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2023</p>
+                <h3>Final Report</h3>
+                <p>Final Report evalutes the completed project done throughout the year. Marks mentioned below includes
+                  marks for Individual & group reports and also Final report.</p>
+                <p><strong>Marks Allocated : </strong>19</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 61%" aria-valuenow="61"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 19%" aria-valuenow="29"
+                    aria-valuemin="0" aria-valuemax="100">19%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Viva -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">October 2023</p>
+                <h3>Final Presentation & Viva</h3>
+                <p>Viva is held individually to assess each members contribution to the project.</p>
+                <p><strong>Marks Allocated : </strong>20</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">10%</div>
+                </div>
+              </div>
+            </li>
+            <!-- Website -->
+            <li class="timeline-event">
+              <label class="timeline-event-icon"></label>
+              <div class="timeline-event-copy">
+                <p class="timeline-event-thumbnail">November 2023</p>
+                <h3>Website Assessment</h3>
+                <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+                <p><strong>Marks Allocated : </strong>2</p>
+                <div class="progress">
+                  <div class="progress-bar bg-infinity-primary" role="progressbar" style="width: 55%" aria-valuenow="55"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="2"
+                    aria-valuemin="0" aria-valuemax="100">2%</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Downloads -->
+  <section id="downloads" class="main-sections">
+    <div class="container">
+      <h5 class="section-headings">Downloads</h5>
+      <!-- Documents -->
+      <div class="sub-section">
+        <h2>Documents</h2>
+        <p>Please find all documents related to this project below.</p>
+        <div class="row mt-sm-5 downloads-container">
+          <!-- Topic Assessment -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Topic Assessment</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/03/24</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1MSfoUJS49D_-5bjQxHSZpLK65rvEHuF_/view?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Project Charter -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Project Charter</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/04/09</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/file/d/1n-hsjvM_dMpHdDq39vb7KisTdamm2Shp/view?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Project Proposal -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Project Proposal</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/05/08</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1zWFCIPcpdIjla6KoH4c8PU0a5aRHwbdo?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Status Documents -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Status Documents I</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/05/26</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/19ejfXo5Py47OZwBWd0dYUzduEkd444Y5?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Status Documents -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Status Documents II</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/09/07</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1mVQ2UWsYO7S4-GnekI2WedSrstCwQPkc?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Research -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Research Paper</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/11/06</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1nSX3047Wiac_1-PrZEmQY0XSQrfK9ou8?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Final Report -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-pdf mr-2 download-pdf"></i>Final Report</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/10/10</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1ZF2Upf40NfnSyPiLC33IxQAN2QeKBVtj?usp=sharing"
+                    target="_blank">Download</a></li>
+                <li class="list-group-item">Individual<a
+                    href="https://drive.google.com/drive/folders/1MrhPVjmAFwqyOpzjY7sMajMAou9XlYcE?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- Poster -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-image mr-2 download-image"></i>Poster</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/09/04</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1SD-ETZVi69JUmkyQFfMzyHQBc-0yfmLD?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Presentations -->
+      <div id="presentations" class="sub-section">
+        <h2>Presentations</h2>
+        <p>Please find all presentations related this project below.</p>
+        <div class="row mt-sm-5 downloads-container">
+          <!-- Project Proposal -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Project
+                  Proposal</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/03/31</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1WznWQptsBmNAVhDyCd1YKW2EEusbxGBQ?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Progress Presentation I -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Progress
+                  Presentation I</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/05/25</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1Y1iNkfbP3ZcceajQewuWs8UCRahoGcbI?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Progress Presentation II -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Progress
+                  Presentation II</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/09/04</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1DjpHx5E0v1pOPC0dtwprexplvTGcRIlj?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Final Presentation -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-file-powerpoint mr-2 download-powerpoint"></i></i>Final
+                  Presentation</h5>
+                <p class="card-text pt-sm-2">Submitted on 2023/10/30</p>
+              </div>
+              <ul class="download-items list-group list-group-flush">
+                <li class="list-group-item">Group<a
+                    href="https://drive.google.com/drive/folders/1c5JESncJaFKXp1MKhDm0y8i6zEnz1DcO?usp=sharing"
+                    target="_blank">Download</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-section">
+        <h2>Commercialization</h2>
+        <div class="mt-sm-5 mb-5">
+          <center>
+            <video height="100%" , width="100%" controls poster="./Images/other/app-poster.png">
+              <source src="./promotional/appVid.mp4" type="video/mp4">
+            </video>
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Us -->
+  <section id="about" class="main-sections " style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">About Us</h5>
+      <div class="sub-section about-us-container ">
+        <h2>Meet Our Team !</h2>
+        <div class="row  mt-sm-5 ">
+          <!-- Supervisor -->
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/supervisor.png" class="about-us-image supervisor" alt="Dr. Harindra fernando"
+                height="20%" width="100%" />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Harindra fernando</h5>
+                </br>
+                <span class="badge badge-secondary">Supervisor</span>
+                <div class="text-group">
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Information Systems Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://scholar.google.com/citations?hl=en&user=T71-cqEAAAAJ"><i
+                      class="fab fa-google mr-2"></i>G-Scholar</a>
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/harinda-fernando-7655bb67/"><i
+                      class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:harinda.f@sliit.lk"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Co Supervisor -->
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/cosupervisor.png" class="about-us-image cosupervisor" alt="Dr. Dilshan De Silva"
+                height="20%" />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Dilshan De Silva</h5>
+                </br>
+                <span class="badge badge-secondary">Co-Supervisor</span>
+                <div class="text-group">
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Software Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://scholar.google.com/citations?user=WhSkOpAAAAAJ&hl=en&oi=ao"><i
+                      class="fab fa-google mr-2"></i>G-Scholar</a>
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/dr-dilshan-de-silva-96384573/"><i
+                      class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:dilshan.i@sliit.lk"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- external Supervisor -->
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/other/avatar.png" class="about-us-image cosupervisor" alt="Dr. Janitha Jayaneth"
+                height="0%" />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Janitha Jayaneth</h5>
+                </br>
+                <span class="badge badge-secondary">External-Supervisor</span>
+                <div class="text-group">
+                  <p>Base Hospital Balangoda<br />
+                    Sri Lanka</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Division</strong></p>
+                  <p>Mental Health Department</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text" style="cursor: pointer;" href="mailto:"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row  mt-sm-5" style="justify-content: center">
+          <!-- Erandi -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/tharindu1.jpeg" class="about-us-image " alt="Roshani O.V.D.E"
+                style="width: 100%; height: 20%;" />
+              <div class="card-body">
+                <h5 class="card-title">Manathunga<br /> M.D.T.L</h5>
+                </br>
+                <span class="badge badge-secondary">Group Leader</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Computer System and Network Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/erandika-roshani/"><i
+                      class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:roshanie101@gmail.com"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- kelum -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/kelum.png" class="about-us-image" alt="Ayuwardhana H.M.K.J.J"
+                style="width: 100%; height: 20%;" />
+              <div class="card-body">
+                <h5 class="card-title">Ayuwardhana <br />H.M.K.J.J</h5>
+                </br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Software Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/kelum-ayuwardhana-75bb57170/"><i
+                      class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:kelumayuwardhana@gmail.com"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- manushi -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/rasula.jpeg" class="about-us-image" alt="Rodrigo P.H.M.S"
+                style="width: 100%; min-height: 20%;" />
+              <div class="card-body">
+                <h5 class="card-title">Warunamal<br /> N.R.M</h5>
+                </br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Computer System and Network Engineering</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;"
+                    href="https://www.linkedin.com/in/manushi-rodrigo-b29b62221/"><i
+                      class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:manushishavindya@gmail.com"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Rusiru -->
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card about-us-card">
+              <img src="Images/dp/rusiru.png" class="about-us-image" alt="Hewageegana R.U"
+                style="width: 100%; min-height: 40%; max-height: 40%;" />
+              <div class="card-body">
+                <h5 class="card-title">Hewageegana <br />R.U</h5>
+                </br>
+                <span class="badge badge-secondary">Group Member</span>
+                <div class="text-group">
+                  <p><strong>Undergraduate</strong></p>
+                  <p>Sri Lanka Institute of Information Technology</p>
+                </div>
+                <div class="text-group">
+                  <p><strong>Department</strong></p>
+                  <p>Information Technology</p>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a class="card-text mr-4" style="cursor: pointer;" href="#"><i
+                      class="fab fa-linkedin-in mr-2"></i>LinkedIn</a>
+                  <a class="card-text" style="cursor: pointer;" href="mailto:hewageegana.r@gmail.com"><i
+                      class="fas fa-envelope-open-text mr-2"></i></i>E-Mail</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="main-sections" style="background-color:#FDFEFE">
+    <div class="container">
+      <h5 class="section-headings">Contact Us</h5>
+      <div class="sub-section">
+        <h2>Get in Touch</h2>
+        <div class="row  mt-sm-5">
+          <div class="col-md-6 col-sm-12 contact-form">
+            <form action="MAILTO:appinfo.serenity@gmail.com" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="message">Message or Query</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btncolorgradient	">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6 col-sm-12 contact-details">
+            <div>
+              <p><strong>Contact Details</strong></p>
+              <p>For further queries please reach us at <a
+                  href="mailto: appinfo.serenity@gmail.com">appinfo.serenity@gmail.com</a></p>
+              <p>Hope Serenity made a positive difference in your mental well-being. Thank you!</p>
+              <p>-Team Serenity- </p>
+              <img class="footer_Logo" src="Images/logo/log.png" width="100%" height="100%" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="lib/jquery/jquery-3.5.1.slim.min.js"></script>
+  <script src="lib/fontawesome/js/all.min.js"></script>
+  <script src="lib/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
