@@ -751,15 +751,68 @@ body {
   object-fit: cover;
 }
 
-.about-us-card .supervisor {
-  -o-object-position: 50% 25%;
-  object-position: 50% 25%;
+.about-us-card {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+  background-color: #fff;
 }
 
-.about-us-card .cosupervisor {
-  -o-object-position: 50% 100%;
-  object-position: 50% 100%;
+.about-us-card:hover {
+  transform: translateY(-3px);
 }
+
+.about-us-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 541px; /* maintain original height */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.badge-secondary {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+}
+
+.list-group-item {
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.list-group-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-us-image {
+    max-height: 400px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+}
+
 
 .about-us-card .erandi {
   -o-object-position: 50% 25%;
@@ -983,3 +1036,64 @@ body {
 #contact {
   margin-top: 10%;
 }
+
+body {
+  background: #f5fdf6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-heading {
+  color: #28a745;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #34d058, #218838);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-box,
+.info-box {
+  background-color: #ffffff;
+  border-left: 5px solid #28a745;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #34d058, #218838);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: translateY(-2px);
+}
+
+.footer-logo {
+  max-width: 150px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-body img {
+  animation: pop-in 0.5s ease-out forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
